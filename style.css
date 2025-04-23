@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e1; /* Cream */
+    color: #3e3e3e; /* Dark grey text for readability */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #4c3d61; /* Baby Purple */
+}
+
+a {
+    text-decoration: none;
+    color: #4c3d61; /* Baby Purple */
+}
+
+a:hover {
+    color: #c49d6c; /* Gold accent */
+}
+
+header {
+    background-color: #ffffff; /* White */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4c3d61; /* Baby Purple */
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('images/hero-image.jpg'); /* Your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.cta-btn {
+    background-color: #c49d6c; /* Gold */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #4c3d61; /* Baby Purple */
+}
+
+.services-preview {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e5c3f6; /* Lavender */
+}
+
+.services-preview h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #4c3d61; /* Baby Purple */
+    margin-bottom: 40px;
+}
+
+.services-preview .service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-preview .service h3 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #4c3d61;
+}
+
+footer {
+    background-color: #4c3d61; /* Baby Purple */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer .socials a:hover {
+    color: #c49d6c; /* Gold accent */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .services-preview .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
