@@ -1,0 +1,213 @@
+/* Brand Colors */
+:root {
+    --baby-purple: #B19CD9;
+    --lavender: #E6E6FA;
+    --cream: #FFF5E1;
+    --white: #FFFFFF;
+    --minimal-gold: #D4AF37;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream); /* Cream */
+    color: #3e3e3e; /* Dark grey text for readability */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: var(--baby-purple); /* Baby Purple */
+}
+
+a {
+    text-decoration: none;
+    color: var(--baby-purple); /* Baby Purple */
+}
+
+a:hover {
+    color: var(--minimal-gold); /* Gold accent */
+}
+
+/* Header Styles */
+header {
+    background-color: var(--baby-purple);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    background-color: var(--minimal-gold);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: var(--white);
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--baby-purple);
+}
+
+/* Services Preview */
+.services-preview {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--lavender);
+}
+
+.services-preview h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--baby-purple);
+    margin-bottom: 40px;
+}
+
+.services-preview .service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-preview .service h3 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--baby-purple);
+}
+
+/* Footer */
+footer {
+    background-color: var(--baby-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer .socials a:hover {
+    color: var(--minimal-gold);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .services-preview .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Wedding Services Page */
+.wedding-services {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cream);
+}
+
+.wedding-services h2 {
+    font-size: 32px;
+    color: var(--minimal-gold);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Event Rentals Page */
+.event-rentals {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cream);
+}
+
+.event-rentals h2 {
+    font-size: 32px;
+    color: var(--minimal-gold);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--minimal-gold);
+    color: var(--white);
+}
+
+.cta-section a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section a:hover {
+    background-color: var(--baby-purple);
+}
