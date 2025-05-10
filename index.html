@@ -1,91 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Global Styles */
+:root {
+    --baby-purple: #B19CD9;
+    --lavender: #E6E6FA;
+    --cream: #FFF5E1;
+    --white: #FFFFFF;
+    --dark-grey: #333333;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidan Curated Events</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Body Styling */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream); /* Cream */
+    color: var(--dark-grey); /* Dark grey text for contrast */
+}
 
-<body>
+/* Header Styles */
+header {
+    background-color: var(--baby-purple);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="event-rentals.html">Event Rentals</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Hero Section with Luxury Vibe -->
-    <section class="hero">
-        <img src="images/hero-image.jpg" alt="Luxury Event" class="hero-image">
-        <div class="hero-content">
-            <h1>Welcome to Fidan Curated Events</h1>
-            <p>Bringing your luxury event vision to life with unparalleled elegance and precision.</p>
-            <a href="services.html" class="cta-btn">Explore Our Services</a>
-        </div>
-    </section>
+nav ul li {
+    margin: 0 30px;
+}
 
-    <!-- Preview of Services -->
-    <section class="services-preview">
-        <h2>Our Exclusive Services</h2>
-        <div class="services-list">
-            <div class="service">
-                <h3>Event Planning</h3>
-                <p>From intimate gatherings to grand celebrations, we craft memorable events tailored to your needs.</p>
-                <a href="wedding-services.html" class="cta-btn">Learn More</a>
-            </div>
-            <div class="service">
-                <h3>Luxury Vehicle Rentals</h3>
-                <p>Travel in unmatched style with our exquisite fleet of luxury and exotic vehicles.</p>
-                <a href="https://f1dan.ca/fleet" class="cta-btn">View Fleet</a>
-            </div>
-            <div class="service">
-                <h3>Wedding Coordination</h3>
-                <p>Experience the wedding of your dreams, expertly coordinated from start to finish.</p>
-                <a href="wedding-services.html" class="cta-btn">Plan Your Wedding</a>
-            </div>
-        </div>
-        <a href="services.html" class="cta-btn">View All Services</a>
-    </section>
+nav ul li a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
 
-    <!-- Catering Section -->
-    <section class="cta-section">
-        <h2>Exquisite Catering for Every Event</h2>
-        <p>Indulge your guests with gourmet meals and artisanal creations, curated for sophistication.</p>
-        <a href="catering.html" class="cta-btn">Explore Catering Menus</a>
-    </section>
+nav ul li a:hover {
+    color: var(--lavender);
+}
 
-    <!-- Wedding Services Overview -->
-    <section class="cta-section">
-        <h2>Your Dream Wedding, Curated</h2>
-        <p>Let us handle every detail of your wedding—from venue selection to custom-tailored coordination.</p>
-        <a href="wedding-services.html" class="cta-btn">Learn About Wedding Services</a>
-    </section>
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('images/hero-image.jpg'); /* Hero image */
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    <!-- Event Rentals Section -->
-    <section class="cta-section">
-        <h2>Exclusive Event Rentals</h2>
-        <p>From elegant furniture to luxurious decor, our rental services enhance every occasion.</p>
-        <a href="event-rentals.html" class="cta-btn">Browse Event Rentals</a>
-    </section>
+.hero h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Fidan Curated Events. All Rights Reserved.</p>
-        <div class="socials">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
 
-</body>
+/* Call to Action Button */
+.cta-btn {
+    background-color: var(--baby-purple);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: var(--white);
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
-</html>
+.cta-btn:hover {
+    background-color: var(--lavender);
+}
+
+/* Services Preview */
+.services-preview {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--lavender);
+}
+
+.services-preview h2 {
+    font-size: 3.5rem;
+    color: var(--baby-purple);
+    margin-bottom: 40px;
+}
+
+.services-preview .service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-preview .service h3 {
+    font-size: 1.8rem;
+    color: var(--baby-purple);
+}
+
+/* Section with Text */
+.cta-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--white);
+    color: var(--dark-grey);
+}
+
+.cta-section a {
+    text-decoration: none;
+    color: var(--baby-purple);
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid var(--baby-purple);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section a:hover {
+    background-color: var(--baby-purple);
+    color: var(--white);
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--baby-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer .socials a:hover {
+    color: var(--lavender);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .services-preview .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
